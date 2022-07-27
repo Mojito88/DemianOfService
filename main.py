@@ -3,10 +3,18 @@ import socket
 import time
 import os
 import random
-
 from threading import Thread
+from sys import platform
 
-os.system("clear")
+if platform == "linux" or platform == "linux2":
+    # linux
+    os.system("clear")
+
+elif platform == "win32":
+    # Windows...
+    os.system("cls")
+
+
 
 if not __name__ == "__main__":
     exit()
@@ -113,3 +121,4 @@ except KeyboardInterrupt:
 
 #Thanks if you are using my scipt <3
 #And if you are modifying/editing it.
+
