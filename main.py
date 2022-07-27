@@ -41,7 +41,7 @@ print(ConsoleColors.BOLD + ConsoleColors.WARNING + '''
   |____/ \___/____/  |_|\___/ \___/|_|
   
   Auth: Mojito88
-    Version: 0.7
+    Version: 1.0
     I decline any responsibility regarding 
     the use of this as of all other tools.
       ''')
