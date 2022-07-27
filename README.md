@@ -1,6 +1,9 @@
 # DemianOfService
 Easy guided Dos Tool
 <br/>
+- [x] Updating to v. 0.7
+- [ ] Add proxy
+<br/>
 # Easy Commandline-Interface
 [![dos.png](https://i.postimg.cc/Qxg3dY4C/dos.png)](https://postimg.cc/YhSVXRwB)
 
