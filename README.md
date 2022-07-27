@@ -2,7 +2,7 @@
 Easy guided Dos Tool
 <br/>
 - [x] Updating to v. 0.7
-- [ ] Add proxy
+- [ ] Proxy connection will be added on 1.1.0 version
 <br/>
 # Easy Commandline-Interface
 <br/>
